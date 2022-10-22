@@ -1,3 +1,4 @@
+// Import Product Model
 const productModel = require("../models/productsModel.js")
 const mongoose = require('mongoose');
 const { uploadFile } = require("../aws/aws.js")

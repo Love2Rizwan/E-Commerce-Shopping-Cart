@@ -12,7 +12,6 @@ const isValid = function (value) {
 }
 
 
-
 //  =================================== Create cart ==================
 
 const createCart = async function (req, res) {
@@ -100,6 +99,7 @@ const createCart = async function (req, res) {
             totalPrice += product.price * quantity
             totalPrice = totalPrice.toFixed(2)
             totalItems = itemsArr.length
+           
 
             const updatedCart = await cartModel.findOneAndUpdate({ _id: cartId }, ({
                 items: itemsArr, totalPrice: totalPrice, totalItems: totalItems

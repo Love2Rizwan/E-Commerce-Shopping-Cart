@@ -14,11 +14,15 @@ router.get("/user/:userId/profile", MW.authentication, userController.getUsers)
 router.put("/user/:userId/profile", MW.authentication, MW.authorization, userController.updateUser)
 
 // =================================== product User ============================
-
+// handle post request for path /products
 router.post("/products", productController.createProduct)
+// handle get request for path /products
 router.get("/products", productController.getProductByQuery)
+// handle get request for path /products/:productId
 router.get("/products/:productId", productController.getProductById)
+// handle put request for path /products/:productId
 router.put("/products/:productId", productController.updateProductById)
+// handle delete request for path /products/:productId
 router.delete("/products/:productId", productController.Deleteproduct)
 
 // =================================== cart User ============================
