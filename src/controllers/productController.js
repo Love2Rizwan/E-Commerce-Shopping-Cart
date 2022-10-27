@@ -16,7 +16,7 @@ const isValidavailableSizes = function (availableSizes) {
 }
 
 // ================================== Create product ===========================
-
+ 
 
 const createProduct = async function (req, res) {
 

@@ -23,7 +23,7 @@ const createUser = async function (req, res) {
             return res.status(400).send({ status: false, message: "Please enter Data" })
         }
 
-        let { fname, lname, email, profileImage, password, phone, address } = data;
+        let { fname, lname, email, password, phone, address } = data;
 
         // ================================== FistName And LastName =================================
         if (!fname) {
